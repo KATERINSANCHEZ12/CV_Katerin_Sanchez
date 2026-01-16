@@ -27,3 +27,13 @@ Si quieres botón de "Descargar PDF", agrega tu PDF público dentro de `assets/`
 `assets/CV_Katerin_Sanchez.pdf`
 
 > Recomendación: no publiques datos sensibles (documento, dirección exacta, etc.).
+
+## Certificados (descarga)
+
+Los PDFs de certificados están en:
+
+- `assets/certificados/`
+
+Para añadir más, súbelos a esa carpeta y agrega una tarjeta nueva en la sección **Cursos y certificados** dentro de `index.html`.
+
+> Consejo: si tu repo es público, evita publicar documentos con datos sensibles.

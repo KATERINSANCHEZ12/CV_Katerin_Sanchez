@@ -50,6 +50,19 @@
   document.getElementById("filterQaBtn")?.addEventListener("click", () => setFilter("qa"));
   document.getElementById("filterDevBtn")?.addEventListener("click", () => setFilter("dev"));
 
+
+
+  // Toggle certificados: grilla <-> lista
+  const certGrid = document.getElementById("certGrid");
+  const toggleCert = document.getElementById("toggleCertView");
+  let certList = false;
+  toggleCert?.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!certGrid) return;
+    certList = !certList;
+    certGrid.classList.toggle("certs--list", certList);
+  });
+
   const topBtn = document.getElementById("toTopBtn");
   topBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 })();
