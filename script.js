@@ -65,4 +65,26 @@
 
   const topBtn = document.getElementById("toTopBtn");
   topBtn?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+  // Descargas confiables (PDF/DOCX/Certificados)
+  // - Evita clicks "muertos" por rutas/nombres mal subidos al repo
+  // - Si el archivo no existe, muestra un mensaje claro
+  document.querySelectorAll("a.dl").forEach((a) => {
+    a.addEventListener("click", async (e) => {
+      const href = a.getAttribute("href");
+      if (!href) return;
+      e.preventDefault();
+
+      try {
+        const res = await fetch(href, { method: "HEAD" });
+        if (!res.ok) throw new Error("not_found");
+        window.location.href = href;
+      } catch (_) {
+        alert(
+          "No se encontró el archivo para descargar.\n\n" +
+          "Revisa que el PDF/DOC esté subido en el repositorio y que el nombre coincida EXACTAMENTE (mayúsculas, espacios)."
+        );
+      }
+    });
+  });
 })();
