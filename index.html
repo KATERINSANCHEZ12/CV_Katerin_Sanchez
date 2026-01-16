@@ -3,107 +3,402 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="CV de Leidy Katerin Sanchez Firigua - QA Tester / Ingeniería de Sistemas." />
-  <title>CV | Leidy Katerin Sanchez Firigua</title>
+  <meta name="description" content="CV online de Katerin Sanchez — QA Tester / Ingeniería de Sistemas" />
+  <meta property="og:title" content="Katerin Sanchez — QA Tester / Sistemas" />
+  <meta property="og:description" content="CV online: experiencia QA, Azure DevOps, documentación y ejecución de pruebas, .NET y SQL Server." />
+  <meta property="og:type" content="website" />
+  <title>Katerin Sanchez | CV</title>
+
+  <!-- Tech icons (Devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- UI icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer">
+
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
+
 <body>
-  <main class="page">
-    <header class="header">
-      <div class="header__top">
-        <div>
-          <h1>Leidy Katerin Sanchez Firigua</h1>
-          <p class="subtitle">QA Tester | Calidad de Software | Ingeniería de Sistemas (en proceso de grado)</p>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">CV · Katerin Sanchez</span>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="themeBtn" type="button" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <span class="btn__text">Tema</span>
+        </button>
+
+        <a class="btn btn--ghost" href="#contacto">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          <span class="btn__text">Contacto</span>
+        </a>
+
+        <!-- Opcional: agrega tu PDF público en /assets y pon el nombre aquí -->
+        <a class="btn btn--primary" href="assets/CV_Katerin_Sanchez.pdf" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span class="btn__text">Descargar PDF</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero container reveal">
+      <div class="hero__card">
+        <div class="hero__left">
+          <div class="avatar" aria-hidden="true">
+            <span>KS</span>
+          </div>
+
+          <div>
+            <h1 class="hero__title">Katerin Sanchez</h1>
+            <p class="hero__subtitle">QA Tester · Ingeniería de Sistemas</p>
+
+            <div class="badges" aria-label="Tecnologías principales">
+              <span class="chip"><i class="devicon-azure-plain"></i> Azure DevOps</span>
+              <span class="chip"><i class="devicon-javascript-plain"></i> JavaScript</span>
+              <span class="chip"><i class="devicon-dot-net-plain"></i> .NET</span>
+              <span class="chip"><i class="devicon-microsoftsqlserver-plain"></i> SQL Server</span>
+            </div>
+
+            <p class="hero__summary">
+              Tester QA con experiencia en creación y ejecución de casos de prueba, gestión de defectos y documentación.
+              Enfoque en calidad de software, colaboración con equipos y uso de herramientas como Azure DevOps.
+              Formación en desarrollo (.NET, SQL Server) y actualmente fortaleciendo competencias en Big Data.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#experiencia">
+                <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                <span class="btn__text">Ver experiencia</span>
+              </a>
+              <button class="btn btn--ghost" id="printBtn" type="button">
+                <i class="fa-solid fa-print" aria-hidden="true"></i>
+                <span class="btn__text">Imprimir</span>
+              </button>
+            </div>
+
+            <p class="hero__note">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              Sugerencia: mantén este CV “público” sin datos sensibles (dirección exacta, documento, etc.).
+            </p>
+          </div>
         </div>
-        <div class="actions">
-          <a class="btn" href="assets/CV_Leidy_Katerin_Sanchez_PUBLIC.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+
+        <aside class="hero__right" id="contacto">
+          <h2 class="section__title">Contacto</h2>
+
+          <ul class="contact">
+            <!-- Edita estos links con tus datos reales -->
+            <li>
+              <a class="contact__link" href="mailto:tu-correo@correo.com">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>tu-correo@correo.com</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact__link" href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact__link" href="https://github.com/KATERINSANCHEZ12" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li class="contact__muted">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Colombia (remoto / presencial)</span>
+            </li>
+          </ul>
+
+          <div class="mini">
+            <div class="mini__item">
+              <div class="mini__label">Rol actual</div>
+              <div class="mini__value">Tester QA · Belltech</div>
+            </div>
+            <div class="mini__item">
+              <div class="mini__label">Inglés</div>
+              <div class="mini__value">A2</div>
+            </div>
+            <div class="mini__item">
+              <div class="mini__label">Disponibilidad</div>
+              <div class="mini__value">Inmediata / a convenir</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container section reveal" id="stack">
+      <div class="section__head">
+        <h2 class="section__title">Herramientas y stack</h2>
+        <div class="section__actions">
+          <button class="btn btn--ghost btn--small" id="showAllBtn" type="button">Ver todo</button>
+          <button class="btn btn--ghost btn--small" id="filterQaBtn" type="button">Solo QA</button>
+          <button class="btn btn--ghost btn--small" id="filterDevBtn" type="button">Solo Dev</button>
         </div>
       </div>
-      <div class="contact">
-        <a href="mailto:leidyk.sanchezf@ecci.edu.co">leidyk.sanchezf@ecci.edu.co</a>
-        <span class="dot">•</span>
-        <a href="#" title="Enlace">https://www.linkedin.com/in/katerin-sanchez-firigua-99b18a241/</a>
-        <span class="dot">•</span>
-        <a href="#" title="Opcional">GitHub/Portafolio (agregar enlace)</a>
+
+      <div class="grid skills" id="skillsGrid" aria-label="Habilidades">
+        <!-- QA -->
+        <article class="card skill" data-group="qa">
+          <div class="card__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></div>
+          <h3>Casos de prueba</h3>
+          <p>Diseño, ejecución, trazabilidad y evidencias. Priorización por riesgo.</p>
+          <div class="tags">
+            <span class="tag">Smoke</span><span class="tag">Regression</span><span class="tag">UAT</span>
+          </div>
+        </article>
+
+        <article class="card skill" data-group="qa">
+          <div class="card__icon"><i class="fa-solid fa-bug" aria-hidden="true"></i></div>
+          <h3>Gestión de defectos</h3>
+          <p>Registro, severidad, reproducción y seguimiento con el equipo.</p>
+          <div class="tags">
+            <span class="tag">Triaging</span><span class="tag">Severidad</span><span class="tag">Evidencias</span>
+          </div>
+        </article>
+
+        <article class="card skill" data-group="qa">
+          <div class="card__icon"><i class="devicon-azure-plain" aria-hidden="true"></i></div>
+          <h3>Azure DevOps</h3>
+          <p>Work items, tableros, pipelines (básico), y documentación de pruebas.</p>
+          <div class="tags">
+            <span class="tag">Boards</span><span class="tag">Repos</span><span class="tag">Test Plans*</span>
+          </div>
+        </article>
+
+        <article class="card skill" data-group="qa">
+          <div class="card__icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+          <h3>Documentación QA</h3>
+          <p>Planes, reportes, matrices, criterios de aceptación, y manuales.</p>
+          <div class="tags">
+            <span class="tag">Plantillas</span><span class="tag">Estandarización</span>
+          </div>
+        </article>
+
+        <!-- Dev -->
+        <article class="card skill" data-group="dev">
+          <div class="card__icon"><i class="devicon-dot-net-plain" aria-hidden="true"></i></div>
+          <h3>.NET</h3>
+          <p>Fundamentos, estructuras, consumo de datos y bases para backend.</p>
+          <div class="tags">
+            <span class="tag">C#</span><span class="tag">CRUD</span>
+          </div>
+        </article>
+
+        <article class="card skill" data-group="dev">
+          <div class="card__icon"><i class="devicon-microsoftsqlserver-plain" aria-hidden="true"></i></div>
+          <h3>SQL Server</h3>
+          <p>Consultas, joins, filtros, buenas prácticas y análisis de datos básico.</p>
+          <div class="tags">
+            <span class="tag">T-SQL</span><span class="tag">Joins</span><span class="tag">Views</span>
+          </div>
+        </article>
+
+        <article class="card skill" data-group="dev">
+          <div class="card__icon"><i class="devicon-javascript-plain" aria-hidden="true"></i></div>
+          <h3>JavaScript</h3>
+          <p>Fundamentos y scripting para validaciones y automatización básica.</p>
+          <div class="tags">
+            <span class="tag">DOM</span><span class="tag">Validaciones</span>
+          </div>
+        </article>
+
+        <!-- Datos -->
+        <article class="card skill" data-group="data">
+          <div class="card__icon"><i class="fa-solid fa-chart-simple" aria-hidden="true"></i></div>
+          <h3>Big Data (en curso)</h3>
+          <p>Fortaleciendo conceptos para graduación de Ingeniería de Sistemas.</p>
+          <div class="tags">
+            <span class="tag">ETL</span><span class="tag">Modelado</span><span class="tag">Analítica</span>
+          </div>
+        </article>
+
+        <!-- Herramientas internas -->
+        <article class="card skill" data-group="qa">
+          <div class="card__icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+          <h3>KAL / K3A</h3>
+          <p>Conocimientos en plataformas internas (según operación del proyecto).</p>
+          <div class="tags">
+            <span class="tag">Operación</span><span class="tag">Flujos</span>
+          </div>
+        </article>
       </div>
-      <p class="notice">
-        Nota de privacidad: esta página suele ser pública. Considera no publicar tu número de celular ni dirección.
+
+      <p class="footnote">
+        *Si usas “Test Plans” o módulos específicos, ajusta el texto para que coincida con lo que realmente manejas.
       </p>
-    </header>
-
-    <section class="card">
-      <h2>Perfil</h2>
-      <p>
-        Tester QA con experiencia desde 2022 en análisis de requerimientos, diseño y ejecución de casos de prueba,
-        reporte y réplica de bugs, y documentación de pruebas. Manejo de Azure DevOps para gestión del ciclo de pruebas
-        y seguimiento de incidencias. Formación como Tecnólogo en Desarrollo Informático (ECCI, 2024) y seminario en
-        desarrollo de software con .NET y SQL Server. En proceso de grado de Ingeniería de Sistemas (Seminario de Big Data en curso).
-      </p>
     </section>
 
-    <section class="card">
-      <h2>Competencias clave</h2>
-      <ul>
-        <li>Diseño de casos de prueba (funcional, regresión, smoke) y trazabilidad (requerimiento - caso - defecto).</li>
-        <li>Reporte, priorización y seguimiento de defectos; validación de correcciones y reproducción de incidencias.</li>
-        <li>Documentación QA: planes de prueba, evidencias, matrices y reportes de resultados.</li>
-        <li>Trabajo colaborativo con desarrollo, producto y soporte; comunicación clara orientada a entregables.</li>
-        <li>Bases en SQL Server (consultas) y .NET; conocimientos en JavaScript (KAL / K3A).</li>
-      </ul>
-    </section>
+    <section class="container section reveal" id="experiencia">
+      <h2 class="section__title">Experiencia</h2>
 
-    <section class="card">
-      <h2>Experiencia</h2>
+      <div class="timeline">
+        <article class="titem">
+          <div class="titem__dot" aria-hidden="true"></div>
+          <div class="titem__content">
+            <header class="titem__head">
+              <h3>Tester QA · Belltech</h3>
+              <div class="titem__meta">
+                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Nov 2022 – Actual</span>
+                <span class="sep">•</span>
+                <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colombia</span>
+              </div>
+            </header>
 
-      <article class="role">
-        <div class="role__head">
-          <h3>Tester QA Junior — BELLTECH</h3>
-          <span class="meta">Noviembre 2022 – Actualidad</span>
-        </div>
-        <ul>
-          <li>Creación y mantenimiento de casos de prueba; ejecución y registro de resultados en Azure DevOps.</li>
-          <li>Reporte de bugs con evidencia, pasos de reproducción y severidad; seguimiento hasta cierre.</li>
-          <li>Análisis de requerimientos para definir escenarios de prueba y criterios de aceptación.</li>
-          <li>Ejecución de pruebas de regresión y validación de correcciones; réplica de bugs para confirmar hallazgos.</li>
-          <li>Apoyo en documentación de pruebas y coordinación con el equipo para priorizar incidencias.</li>
-        </ul>
-      </article>
+            <ul class="bullets">
+              <li>Creación, ejecución y mantenimiento de <strong>casos de prueba</strong> y evidencias.</li>
+              <li>Gestión de incidencias/defectos, priorización y seguimiento con el equipo.</li>
+              <li>Uso de <strong>Azure DevOps</strong> para registro de work items y documentación de QA.</li>
+              <li>Apoyo en coordinación / gestión de equipo y estandarización de documentación.</li>
+            </ul>
 
-      <article class="role">
-        <div class="role__head">
-          <h3>Soporte Informático — Universidad ECCI</h3>
-          <span class="meta">Septiembre 2022 – Noviembre 2022</span>
-        </div>
-        <ul>
-          <li>Instalación de imágenes, sistemas operativos y aplicativos.</li>
-          <li>Soporte a usuarios y solución de incidencias técnicas durante eventos tecnológicos.</li>
-          <li>Configuración y mantenimiento preventivo de equipos de cómputo.</li>
-        </ul>
-      </article>
-    </section>
+            <div class="tags">
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">QA Manual</span>
+              <span class="tag">Documentación</span>
+              <span class="tag">Trabajo en equipo</span>
+              <span class="tag">JavaScript (básico)</span>
+            </div>
 
-    <section class="card grid">
-      <div>
-        <h2>Formación y cursos</h2>
-        <ul>
-          <li><strong>Ingeniería de Sistemas — Universidad ECCI</strong> (en proceso de grado). <span class="muted">Seminario de Big Data en curso (requisito de grado).</span></li>
-          <li><strong>Tecnólogo en Desarrollo Informático — Universidad ECCI</strong> (2024).</li>
-          <li><strong>Seminarios / formación complementaria:</strong> .NET y SQL Server; Big Data (en curso).</li>
-        </ul>
+            <details class="more">
+              <summary>Agregar logros con métricas (recomendado)</summary>
+              <div class="more__box">
+                <p>Ejemplos para que los completes con tus números reales:</p>
+                <ul class="bullets">
+                  <li>“Diseñé y ejecuté <strong>XX</strong> casos por sprint, reduciendo retrabajos en <strong>YY%</strong>.”</li>
+                  <li>“Detecté y documenté <strong>XX</strong> bugs (incluyendo <strong>ZZ</strong> críticos) antes de producción.”</li>
+                  <li>“Estandaricé plantillas de QA, mejorando la trazabilidad de pruebas en <strong>YY</strong> equipos.”</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="titem">
+          <div class="titem__dot" aria-hidden="true"></div>
+          <div class="titem__content">
+            <header class="titem__head">
+              <h3>Soporte Informático · Universidad ECCI</h3>
+              <div class="titem__meta">
+                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Sep 2022 – Nov 2022</span>
+                <span class="sep">•</span>
+                <span><i class="fa-solid fa-building" aria-hidden="true"></i> Bogotá</span>
+              </div>
+            </header>
+
+            <ul class="bullets">
+              <li>Soporte a usuarios, control de inventario y apoyo a mantenimiento preventivo/correctivo.</li>
+              <li>Gestión de solicitudes y seguimiento a proveedores.</li>
+            </ul>
+
+            <div class="tags">
+              <span class="tag">Soporte TI</span>
+              <span class="tag">Inventario</span>
+              <span class="tag">Atención al usuario</span>
+            </div>
+          </div>
+        </article>
       </div>
-      <div>
-        <h2>Herramientas e idiomas</h2>
-        <ul>
-          <li><strong>Herramientas:</strong> Azure DevOps (Test Plans, Work Items, Boards), SQL Server, .NET (bases), JavaScript (KAL / K3A).</li>
-          <li><strong>Idiomas:</strong> Inglés A2.</li>
-        </ul>
-        <p class="foot">Referencias: disponibles a solicitud.</p>
+    </section>
+
+    <section class="container section reveal" id="formacion">
+      <h2 class="section__title">Formación y cursos</h2>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Ingeniería de Sistemas</h3>
+          <p class="muted">Finalizada académicamente; pendiente graduación por seminario.</p>
+          <div class="tags">
+            <span class="tag">Big Data (seminario)</span>
+            <span class="tag">Sistemas</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Tecnólogo en Desarrollo Informático (2024)</h3>
+          <p class="muted">Universidad ECCI</p>
+          <div class="tags">
+            <span class="tag">Desarrollo</span>
+            <span class="tag">Bases de datos</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Seminario: Desarrollo de Software</h3>
+          <p class="muted">.NET + SQL Server</p>
+          <div class="tags">
+            <span class="tag">.NET</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Inglés</h3>
+          <p class="muted">Nivel A2</p>
+          <div class="tags">
+            <span class="tag">Lectura</span>
+            <span class="tag">Escritura básica</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section reveal" id="proyectos">
+      <div class="section__head">
+        <h2 class="section__title">Proyectos (opcional)</h2>
+        <a class="btn btn--ghost btn--small" href="https://github.com/KATERINSANCHEZ12" target="_blank" rel="noopener">
+          Ver GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="grid three">
+        <article class="card project">
+          <h3>Checklist QA + plantillas</h3>
+          <p>Crea un repo con tus plantillas: plan de pruebas, reporte de bugs, checklist de smoke/regresión.</p>
+          <div class="tags"><span class="tag">QA</span><span class="tag">Docs</span></div>
+        </article>
+
+        <article class="card project">
+          <h3>Mini CRUD .NET + SQL</h3>
+          <p>Proyecto pequeño para demostrar backend, consultas y buenas prácticas.</p>
+          <div class="tags"><span class="tag">.NET</span><span class="tag">SQL Server</span></div>
+        </article>
+
+        <article class="card project">
+          <h3>Data mini-project</h3>
+          <p>Un dataset + notebook/guía con limpieza, consultas y visualización simple.</p>
+          <div class="tags"><span class="tag">Big Data</span><span class="tag">ETL</span></div>
+        </article>
       </div>
     </section>
 
     <footer class="footer">
-      <p>Hecho con GitHub Pages • Última actualización: 2026</p>
+      <div class="container footer__inner">
+        <div class="muted">
+          <span>Hecho con ♥ para GitHub Pages.</span>
+          <span class="sep">•</span>
+          <span id="year"></span>
+        </div>
+
+        <button class="btn btn--ghost btn--small" id="toTopBtn" type="button">
+          Subir <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </button>
+      </div>
     </footer>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
