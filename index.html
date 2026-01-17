@@ -44,11 +44,6 @@
           <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
           <span class="btn__text">Descargar PDF</span>
         </a>
-
-        <a class="btn btn--ghost dl" href="assets/CV_Katerin_Sanchez_QA_Sistemas.docx" download>
-          <i class="fa-solid fa-file-word" aria-hidden="true"></i>
-          <span class="btn__text">Descargar DOCX</span>
-        </a>
       </div>
     </div>
   </header>
@@ -58,7 +53,7 @@
       <div class="hero__card">
         <div class="hero__left">
           <div class="avatar" aria-hidden="true">
-            <span> K S </span>
+            <span>KS</span>
           </div>
 
           <div>
@@ -66,10 +61,10 @@
             <p class="hero__subtitle">QA Tester · Ingeniería de Sistemas</p>
 
             <div class="badges" aria-label="Tecnologías principales">
-              <span class="chip"><i class="devicon-azure-plain"></i> Azure DevOps</span>
-              <span class="chip"><i class="devicon-javascript-plain"></i> JavaScript</span>
-              <span class="chip"><i class="devicon-dot-net-plain"></i> .NET</span>
-              <span class="chip"><i class="devicon-microsoftsqlserver-plain"></i> SQL Server</span>
+              <span class="chip"><i class="devicon-azure-plain" aria-hidden="true"></i> Azure DevOps</span>
+              <span class="chip"><img class="icon-img" src="assets/icons/javascript.svg" alt="JavaScript"> </span>
+              <span class="chip"><img class="icon-img" src="assets/icons/dotnet.svg" alt=".NET"></span>
+              <span class="chip"><img class="icon-img" src="assets/icons/sqlserver.svg" alt="SQL Server"> </span>
             </div>
 
             <p class="hero__summary">
@@ -87,6 +82,14 @@
                 <i class="fa-solid fa-print" aria-hidden="true"></i>
                 <span class="btn__text">Imprimir</span>
               </button>
+            </div>
+
+            <p class="hero__note">
+              <i class="" aria-hidden="true"></i>
+                                                                                          
+            </p>
+          </div>
+        </div>
 
         <aside class="hero__right" id="contacto">
           <h2 class="section__title">Contacto</h2>
@@ -94,10 +97,10 @@
           <ul class="contact">
             <!-- Edita estos links con tus datos reales -->
             <li>
-              <a class="contact__link" href="leidyk.sanchezf@gmail.com">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                <span>leidyk.sanchezf@gmail.com</span>
-              </a>
+             <div class="mini__item">
+              <div class="mini__label">Correo de contacto</div>
+              <div class="mini__value">leidyk.sanchezf@gmail.com</div>
+            </div>
             </li>
             <li>
               <a class="contact__link" href="https://www.linkedin.com/in/katerin-sanchez-firigua-99b18a241/" target="_blank" rel="noopener">
@@ -138,11 +141,13 @@
     <section class="container section reveal" id="stack">
       <div class="section__head">
         <h2 class="section__title">Herramientas y stack</h2>
+		<div>
         <div class="section__actions">
           <button class="btn btn--ghost btn--small" id="showAllBtn" type="button">Ver todo</button>
           <button class="btn btn--ghost btn--small" id="filterQaBtn" type="button">Solo QA</button>
           <button class="btn btn--ghost btn--small" id="filterDevBtn" type="button">Solo Dev</button>
         </div>
+		</div>
       </div>
 
       <div class="grid skills" id="skillsGrid" aria-label="Habilidades">
@@ -170,7 +175,7 @@
           <h3>Azure DevOps</h3>
           <p>Work items, tableros, pipelines (básico), y documentación de pruebas.</p>
           <div class="tags">
-            <span class="tag">Boards</span><span class="tag">Repos</span><span class="tag">Test Plans*</span>
+            <span class="tag">Boards</span><span class="tag">Repos</span><span class="tag">Test Plans</span>
           </div>
         </article>
 
@@ -233,7 +238,7 @@
       </div>
 
       <p class="footnote">
-        *Si usas “Test Plans” o módulos específicos, ajusta el texto para que coincida con lo que realmente manejas.
+        
       </p>
     </section>
 
@@ -578,7 +583,7 @@
               <span class="tag">JavaScript (básico)</span>
             </div>
 
-            <details class="more">
+            <!-- <details class="more">
               <summary>Agregar logros con métricas (recomendado)</summary>
               <div class="more__box">
                 <p>Ejemplos para que los completes con tus números reales:</p>
@@ -588,7 +593,7 @@
                   <li>“Estandaricé plantillas de QA, mejorando la trazabilidad de pruebas en <strong>YY</strong> equipos.”</li>
                 </ul>
               </div>
-            </details>
+            </details> -->
           </div>
         </article>
 
@@ -663,10 +668,8 @@
 
     <section class="container section reveal" id="proyectos">
       <div class="section__head">
-        <h2 class="section__title">Proyectos (opcional)</h2>
-        <a class="btn btn--ghost btn--small" href="https://github.com/KATERINSANCHEZ12" target="_blank" rel="noopener">
-          Ver GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-        </a>
+        <h2 class="section__title">Proyectos</h2>
+
       </div>
 
       <div class="grid three">
