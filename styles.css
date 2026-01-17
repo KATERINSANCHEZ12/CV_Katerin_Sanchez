@@ -200,19 +200,6 @@ a{ color: inherit; }
 }
 .skill .card__icon i{ font-size: 18px; }
 
-/* Inline SVG / image icons (fallback when icon fonts don't load) */
-.icon-img{
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: -3px;
-}
-.skill .card__icon .icon-img{
-  width: 20px;
-  height: 20px;
-  vertical-align: 0;
-}
-
 .tags{ display:flex; flex-wrap:wrap; gap: 8px; margin-top: 12px; }
 .tag{
   padding: 6px 10px;
